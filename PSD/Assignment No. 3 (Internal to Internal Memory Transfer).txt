@@ -1,0 +1,19 @@
+
+//Internal to Internal Memory Transfer
+
+#include<xc.h>
+
+void main()
+{
+	int Source[]={0x23,0x38,0x04,0x44,0x89};
+	int Dest[]={0x03,0x45,0x89,0x65,0x99};
+	int temp;
+	for(int i=0;i<5;i++)
+	{
+		//Swap the values between Source and Dest arrays
+		temp=Source[i];
+		Source[i]=Dest[i];
+		Dest[i]=temp;
+	}
+	return;
+}

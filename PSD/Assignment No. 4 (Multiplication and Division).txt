@@ -1,0 +1,21 @@
+#include<xc.h>
+
+void main(void)
+{
+	static int num1,num2,mul,div;
+
+	num1=0x02;
+	num2=0x04;
+
+	mul=num1*num2;
+
+	div=num2/num1;
+
+	TRISB=0;
+	PORTB=mul;
+
+	TRISB=0;
+	PORTB=div;
+
+	return;
+}

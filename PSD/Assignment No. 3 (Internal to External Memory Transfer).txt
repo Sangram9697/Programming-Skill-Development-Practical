@@ -1,0 +1,14 @@
+//Internal to External Memory Transfer
+
+#include<xc.h>
+
+void main()
+{
+	int Source[]={0x05,0x34,0x89,0x45};
+	int Dest[]={0x67,0x56,0x49,0x36};
+	for(int i=0;i<4;i++)
+	{
+		Dest[i]=Source[i];
+	}
+	return;	
+}
