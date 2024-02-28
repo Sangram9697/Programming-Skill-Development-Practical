@@ -1,5 +1,4 @@
 #include <xc.h>
-
 #pragma config OSC=HS
 #pragma config WDT=OFF
 #pragma config LVP=OFF
